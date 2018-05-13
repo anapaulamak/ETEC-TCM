@@ -1,0 +1,215 @@
+<!--Meu Site-->
+<html lang = "PT-BR">
+	
+	<head>
+		<link rel="stylesheet" type="text/css" href="_css.css"/>
+		<title>Cerâmicas Julia Aoyama</title>
+		<meta charset="UTF-8">
+
+		<!--biblioteca para adicionar os ícones de retorno para home-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<!--JavaScript do meu formulário-->
+		<script language="JavaScript" >
+			function enviardados(){
+				//testar se o campo nome esta preenchido
+				if( document.dados.tx_nome.value=="" || 	
+					document.dados.tx_nome.value.length < 8)
+				{
+					alert( "Preencha seu NOME corretamente!" );
+					document.dados.tx_nome.focus();
+					return false;
+				}
+				 
+				 // verifica validade do endereço de email
+				if( document.dados.tx_email.value=="" || 
+					//procura no texto o indice do parametro de entrada, no caso um @
+					document.dados.tx_email.value.indexOf('@')==-1 || 
+					//procura no texto o indice do parametro de entrada, no caso um .
+					document.dados.tx_email.value.indexOf('.')==-1 )	
+				{
+					alert( "Preencha campo E-MAIL corretamente!" );
+					document.dados.tx_email.focus();
+					return false;
+				}
+				 //verifica se o campo de msg ta nulo
+				if (document.dados.tx_mensagem.value=="") 
+				{
+					alert( "Preencha o campo MENSAGEM!" );
+					document.dados.tx_mensagem.focus();
+					return false;
+				}
+				 
+				 // verifica preenchimento da mensagem
+				if (document.dados.tx_mensagem.value.length < 30 )
+				{
+					alert( "É necessario preencher o campo MENSAGEM com mais de 30 caracteres!" );
+					document.dados.tx_mensagem.focus();
+					return false;
+				}
+				else
+				{
+					alert("Sua mensagem foi enviada com sucesso!");
+				}	 
+					return true;
+			}
+			 
+		</script>
+	</head>
+	
+	<body>
+		<div id="inicio" class="firstsection">
+			
+			<header class="tituloprincipal">CERÂMICAS JULIA AOYAMA</header>	
+			
+			<!--Meu menu-->
+			<nav id="MenuPrincipal" class="row fundoheader">
+				<div class="col-2">
+					<a href="#Home" class="ItemMenu">Home</a>
+				</div>		
+
+				<div class="col-2">
+					<a href="#Sobre" class="ItemMenu">Julia Aoyama</a>
+				</div>
+
+				<div class="col-2">
+					<a href="#Gallery" class="ItemMenu">Galeria</a>
+				</div>
+				
+				<div class="col-2">					
+					<a href="#Raku" class="ItemMenu">Raku</a>
+				</div>
+
+				<div class="col-2">
+					<a href="#Encomendas" class="ItemMenu">Encomendas</a>
+				</div>
+				
+				<div class="col-2">
+					<a href="#Mural" class="ItemMenu">Mural</a>
+				</div>
+   			</nav>				
+		</div>
+		
+		<section id="Sobre">
+			<header><h1>Sobre a ceramista</h1></header>
+				<article>
+					<p>Julia Aoyama, nascida em 12 de junho de 1955, cresceu e vive até hoje na cidade de São Paulo. 
+					Filha de imigrantes japoneses, Julia sempre teve contato com a cultura oriental. 
+					Formada em Processamento de Dados, atuou na área de formação até se aponsentar. 
+					Ainda durante o período que trabalhava, começou a fazer aulas de cerâmica continua a frequentá-las ainda hoje. 
+					Especializou-se na técnica de Raku, uma arte oriental que apresenta resultados surpreendentes e exclusivos.
+					Pratica Ikebana, Pilates e Yoga, e gosta de jardinagem nas horas vagas.</p>
+				</article>
+				<a href="#inicio"><i class="material-icons" style="font-size:36px; color:black">home</i></a>
+		</section>	
+
+		<section id="Gallery">
+			<header><h1>Galeria</h1></header>
+			<figure>
+				<a href="travessas.html" target="_blank"><img src="Travessas\Travessa9.jpg" class="ConfGaleria" title="Travessas"></a>
+				
+				<a href="vasos.html" target="_blank"><img src="Vasos\Vaso1.jpg" class="ConfGaleria" title="Vasos"></a>
+		
+				<a href="colares.html" target="_blank"><img src="Colares_esculturas\Colar1.jpg" class="ConfGaleria" title="Colares e Esculturas"></a>
+			</figure>
+			<a href="#inicio"><i class="material-icons" style="font-size:36px; color:black">home</i></a>
+		</section>
+			
+		<section id="Raku">
+			<header><h1>Raku</h1></header>
+				<article>
+					<p>O Raku é uma técnica japonesa de queima de peças de cerâmica utilizadas nas cerimônias do chá (Chanoyu). A cerimônia é praticada desde o século XII, mas a técnica de queima remete ao final do século XVI (Kioto), quando o mestre do chá Sem-no-Rikyû (1522-1591) pediu ao ceramista Chôjirô (falecido em 1589) que fizesse as peças para o evento.</p>
+
+					<p>As tigelas de chá com vidrado negro e vermelho, resultado da queima, confeccionadas por Chôjirô, seguiam os preceitos da estética de Rikyû e continham sua idealização de austeridade, do inacabado e do significado não explícito.</p>
+
+					<p>No Japão, a tradição Raku tem sido passada de pai para filho há 400 anos, sem nenhuma instrução escrita. Cada geração tem que reinventar seu próprio trabalho.</p>
+					
+					<p>Raku Kichizaemon XV nasceu em Kioto em 1949 e é o primogênito de Raku Kakunyû XIV. Graduou-se em Escultura na Universidade de Tóquio e posteriormente estudou na Itália, sendo considerado a 15a geração da dinastia Raku, aos 32 anos. As peças Raku são consideradas parte do Tesouro Nacional e têm valor incalculável.</p>
+					
+				</article>
+				
+				<a href="#inicio"><i class="material-icons" style="font-size:36px; color:black">home</i></a>
+		</section>
+
+		<section id="Encomendas">
+			<div class="row">
+				<div class="col-12">		
+					<header><h1>Gostou de algo?</h1></header>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="formulario col-8">
+					<div><h3>Entre em contato conosco, adoramos conversar!</h3></div>
+					<br>
+					<form method="post" name="dados" onSubmit="return enviardados();">
+						<label for="name" class="FormItem" >Nome Completo: *</label>
+						<br>
+						<input class="FormItem" name="tx_nome" type="text" id="tx_nome" maxlength="150" value="" placeholder="Seu nome" required="required" tabindex="1" autofocus="autofocus" >
+						<br><br>
+						
+						<label for="Email" class="FormItem">Email: *</label>
+						<br>
+						<input name="tx_email" type="text" id="tx_email" value="" placeholder="Seu Email" tabindex="3" required="required" class="FormItem">
+						<br><br>
+						
+						<label for="Telefone" class="FormItem">Telefone:</label>
+						<br>
+						<input type="telefone" id="telefone" name="telefone" value="" placeholder="Seu telefone" tabindex="4" class="FormItem"/>
+						<br><br>
+						
+						<label for="subject" class="FormItem">Assunto:</label>
+						<br>
+						<select id="subject" name="subject" tabindex="5" class="FormItem">   
+							<option>Quero saber o preço de alguma peça</option>
+						 	<option>Quero fazer uma encomenda</option>  
+						    <option>Sugestões, elogios, comentários...</option>
+						</select>
+						<br><br>
+						
+						<label for="message" class="FormItem">Mensagem: * </label>
+						<br>
+						<textarea maxlength="150" name="tx_mensagem" cols="30" rows="8" id="tx_mensagem" placeholder="Escreva a sua mensagem aqui" tabindex="6" required="required" input class="FormItem" ></textarea><br>
+
+						<input name="Submit" type="submit" class="formobjects confbotao" value="Enviar dados"> 
+						<input name="Clean" type="reset" class="formobjects confbotao" value="Limpar informações">
+					</form>               						 
+				</div>
+			</div>
+		
+			<a href="#inicio"><i class="material-icons" style="font-size:36px; color:black">home</i></a>
+		</section>
+
+		<section id="Mural">
+	       	<header><h1>Mural</h1></header>		
+			<div class="row">	
+				<div id="MuralAulas" class="col-4"><h3>Aulas</h3>
+					<div class="postit1">Procurando aulas de cerâmica? ligue para: 98367-0290</div>
+					<br>
+					<dir class="postit1">Aulas de cerâmica para crianças! www.aulas.com</dir>
+					<br>
+					<div class="postit1">Grupos de cerâmica: todos os sábados, das 10:00 as 17:00.</div>
+				</div>
+				<div id="MuralLojas" class="col-4"><h3>Lojas</h3>
+					<div class="postit2">Tudo para cerâmicas<br>Rua Sabiá, 123</div>
+					<br>
+					<dir class="postit2">Argilas e Tintas<br>www.loja.com.br</dir>
+					<br>
+					<div class="postit2">Cerâmicas Mil<br>Avenida 25 de março, 234</div>
+				</div>
+				<div id="MuralAnuncios" class="col-4"><h3>Anúncios</h3>
+					<div class="postit1">Vende-se Forno para cerâmica<br>(11)72839-8374</div>
+					<br>
+					<dir class="postit1">Procura-se professor para curso profissionalizante<br>www.aulas.com.ve</dir>
+					<br>
+					<div class="postit1">Reservado para anúncios!!!</div>
+				</div>
+			</div>
+		<a href="#inicio"><i class="material-icons" style="font-size:36px; color:black">home</i></a>
+		</section>			
+	</body>
+	<footer id="Footer">
+	<div>Produzido por Ana Paula M. Aoyama Kajihara</div>
+	</footer>
+</html>

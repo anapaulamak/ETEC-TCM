@@ -1,0 +1,245 @@
+//edição dos itens do meu site
+
+html, body{
+	margin: 0px;
+}
+
+body{
+	margin: 0px;
+	background-color: #E1F5FE;
+	min-width: 100%;
+	max-width: 100%;
+	color: #443939; 
+}
+
+.tituloprincipal{
+	text-align: center;
+	color: #ffffff;
+	font-family: Arial;
+	padding-top: 1%;	
+	padding-bottom: 2%;
+	font-size: 4em;
+	font-family: georgia;
+}
+
+.row{
+	float: left;
+	min-width: 100%;     
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"]{
+	float: left;
+	text-align: center;
+	min-height: 1px;
+}
+
+.fundoheader {
+	margin: 0px;
+	background-color: rgba(0, 96, 100, 0.37);
+	width: 100%;
+	padding-bottom: 2%;
+	padding-top: 2%;
+}
+
+.ItemMenu{
+	color: #333333;
+	text-decoration: none;
+	font-family: georgia;
+	font-size: 2em;
+}
+.ItemMenu.visited{
+	color: #666666;
+	text-decoration: none;
+	font-family: georgia;
+	font-size: 2em;
+}
+.ItemMenu.hover{
+	color: #666666;
+	text-decoration: none;
+	font-family: georgia;
+	font-size: 2em;
+
+}
+
+.firstsection{
+	background-image: url(ImagemHome.jpg);
+	background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+    justify-content: center;
+    align-content: center;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.confitítulo{
+	font-size: 3em;
+
+}
+#Sobre{
+    background-color: #E1F5FE;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: left;
+    text-align: left;
+    min-width: 80%;
+	padding: 5%;
+	font-family: georgia;
+	font-size: 1.3em;
+}
+
+#Gallery{
+    background-color: #006064;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    min-width: 95%;
+	padding-bottom: 3%;
+	font-family: georgia;
+	font-size: 1.3em;
+}
+
+.ConfGaleria{
+	width: 30%;
+	height: 50%;
+	margin: 5px;
+	display: inline-grid;
+	border-radius: 5px;
+	float: left;
+}
+
+#Raku{
+    background-color: #E1F5FE;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: left;
+    text-align: left;
+    min-width: 80%;
+	padding: 5%;
+	font-family: georgia;
+	font-size: 1.3em;
+}
+
+#Encomendas{
+    background-color: #006064;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    min-height: 40%;
+    min-width: 97%;
+	padding-bottom: 2%;
+	font-family: georgia;
+	font-size: 1.3em;
+}
+
+.formulario{
+	border: solid 3px #333;
+	border-radius: 20px;
+	min-width: 50%;
+	min-height: 50%;
+	background-color: rgba(158, 158, 158, 0.53);
+	margin-bottom: 10px;
+}
+
+.FormItem{
+	float: left;
+	text-align: left;
+	width:90%;
+	margin-left:5%;
+}
+
+.confbotao{
+	border-style: none;
+	border-radius: 4px;
+	width: 60%;
+	background-color: rgb(189, 182, 182);
+	padding: 1%;
+	font-family: georgia;
+	font-size: 1em;
+	margin-top:3%;
+}
+
+#Mural{
+    background-color: #E1F5FE;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    min-height: 80%;
+    min-width: 80%;
+    flex-flow: row wrap;
+	padding: 3%;
+	font-family: georgia;
+	font-size: 1.3em;
+	
+}
+
+
+/*POST IT - copiei da internet*/
+
+	.quote-container {
+	 	margin-top: 50px;
+	 	position: relative;
+	}
+
+	.postit1{
+		color: #333;
+		background: #eae672;
+	 	position: relative;
+	 	width: 60%;
+	 	margin: 0 auto;
+	 	padding: 5%;
+	 	font-family: Satisfy;
+	  	font-size: 1em;
+	  	box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+	  	-webkit-transform: rotate(2deg);
+		-moz-transform: rotate(2deg);
+		-o-transform: rotate(2deg);
+		-ms-transform: rotate(2deg);
+		transform: rotate(2deg);
+	}
+
+	.postit2{
+		color: #333;
+		background: #eae672;
+	 	position: relative;
+	 	width: 60%;
+	 	margin: 0 auto;
+	 	padding: 5%;
+	 	font-family: Satisfy;
+	  	font-size: 1em;
+	  	box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+	  	-webkit-transform: rotate(-2deg);
+		-moz-transform: rotate(-2deg);
+		-o-transform: rotate(-2deg);
+		-ms-transform: rotate(-2deg);
+		transform: rotate(-2deg);
+	}
+	
+	.pullcenter{
+		text-align: center;
+	}
+
+
+#Footer{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+	font-family: georgia;
+	font-size: 1em;
+	padding: 2%;
+}
